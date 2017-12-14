@@ -47,7 +47,7 @@ function RepoGrid (props) {
   )
 }
 
-//PropTypes
+//PropTypes, checks the type for each prop in a given component
 RepoGrid.propTypes = {
   repos: PropTypes.array.isRequired
 }
@@ -94,6 +94,7 @@ class Popular extends React.Component {
   render() {
     return (
       //Pass in SelectLanguage and RepoGrid components
+      //Each of these "HTML attributes" are actually props of the component
       <div>
         <SelectLanguage
           selectedLanguage={this.state.selectedLanguage}
